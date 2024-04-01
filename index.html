@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+
+            <ul>
+            <li id="hours">00</li>
+                <li id="point">:</li>
+                <li id="min">00</li>
+                <li id="point">:</li>
+                <li id="sec">00</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tasks">
+        <div class="timing">
+            <input type="number" id="timingInp">
+            <button onclick="setTimer()">Set Timer</button>
+        </div>
+        <div style="text-align: center; background-color: #414141; padding: 40px; border-radius: 10px; border: 1px solid #f1f1f1; color: #f1f1f1;">
+            <div class="timer-display">
+                00 : 00 : 00
+            </div>
+            <div class="buttons">
+                <button id="start-timer">Start</button>
+                <button id="pause-timer">Pause</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="limit">
+            <input type="text" list="apps" id="limitInp">
+            <input type="number" id="limitTimeInp">
+            <button onclick="setLimit()">Set Limit</button>
+        </div>
+    </div>
+
+    <datalist id="apps">
+        <option value="Instagram">
+        <option value="Facebook">
+        <option value="Twitter">
+        <option value="TikTok">
+      </datalist>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
